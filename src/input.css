@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.section1{
+    clip-path: ellipse(110% 100% at 50% 0%);
+
+}
+.get{
+    border: 2px solid transparent;
+    border-image: linear-gradient(135deg,  #26CD89 0%, #32CAA7 43.23%, #40C6C9 67.19%, #35B1D0 100%) ;
+    border-image-slice: 1;
+}
+.get:hover{
+    background:linear-gradient(135deg,  #26CD89 0%, #32CAA7 43.23%, #40C6C9 67.19%, #35B1D0 100%) ;
+}
+.star:after{
+    content:"*";
+    color: orangered;
+    
+}
+.check-box{
+  appearance: none; 
+  -webkit-appearance: none;
+  border: #32CAA7 1px solid; 
+  height: 28px;
+  width:28px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.check-box:checked{
+    background: #26CD89;
+}
+.check-box:hover{
+    outline: none;
+}
+.check-box::after{
+    content:'';
+    background :url("../check.svg");
+    background-repeat: no-repeat;
+    height:12px;  
+    width:14px;
+    color: white;   
+    display: none;
+
+}
+.check-box:checked::after {
+    display: block;
+}
+
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    margin-right: 12px;
+    font-size: 30px;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+.bordr{
+    border-bottom: 1px solid #8C99A64D;
+    ;
+}
